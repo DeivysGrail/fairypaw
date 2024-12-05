@@ -1,0 +1,35 @@
+.nav {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    background: transparent;
+    backdrop-filter: blur(10px);
+    border-bottom: solid black 2px;
+    font-family: "Poppins", sans-serif;
+    .ul {
+        height: 60px;
+        width: 100%;
+        list-style-type: none;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+
+
+        .li {
+            color: #f1f1f1;
+
+            .link {
+                text-decoration: none;
+                text-transform: uppercase;
+                letter-spacing: 1px;
+                color: #f1f1f1;
+
+            }
+
+        }
+
+
+    }
+
+
+}
