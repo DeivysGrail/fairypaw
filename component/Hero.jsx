@@ -1,8 +1,7 @@
 import styles from '../styles/Hero.module.css'
 import Navbar from "@/component/Navbar";
 
-export default function Hero() {
-
+export default function Hero(props) {
 
 
 
@@ -11,10 +10,10 @@ export default function Hero() {
 
 return (
 
-    <div className={styles.banner}> {/* Hero banner image*/}
+    <div className={`${styles.banner} ${props.heroPage}`}> {/* Hero banner image*/}
         <Navbar/>
-        <h1 className={styles.h1}>Éducatrice canin</h1>
-        <h2 className={styles.h2}>Fairy Paw</h2>
+        <h1 className={styles.h1}>{props.texte1}</h1>
+        <h2 className={styles.h2}>{props.texte2}</h2>
     </div>
 
 )
